@@ -12,7 +12,7 @@
 ## 概述
 [air-weapp](https://github.com/AlanZou007/air-weapp) 小程序UI库，简单， 实用。
 
-组件现已包含actionsheet, badge, button, cell, cell-group, icon, loading, loadmore, panel, popup, rate, stepper, switch, timer, top-tips, upload, qrcode.
+组件现已包含actionsheet, badge, button, cell, cell-group, icon, loading, loadmore, panel, popup, rate, stepper, switch, search, timer, top-tips, upload, qrcode.
 
 ## 下载
 ```bash
