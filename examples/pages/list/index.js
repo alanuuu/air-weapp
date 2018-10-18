@@ -5,6 +5,6 @@ Page({
     onChange({detail}){
         this.setData({
             'switch1' : detail.checked
-        })
+        });
     }
-})
+});

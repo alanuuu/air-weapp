@@ -14,4 +14,4 @@ Page({
         divider: '#e9eaec',
         background: '#f8f8f9'
     }
-})
+});

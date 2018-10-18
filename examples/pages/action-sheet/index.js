@@ -26,41 +26,41 @@ Page({
     },
     onShareAppMessage() {
         return {
-            title: 'air Weapp'  
+            title: 'air Weapp'
         };
     },
 
     handleOpen1() {
         this.setData({
             visible1: true
-        })
+        });
     },
     handleOpen2() {
         this.setData({
             visible2: true
-        })
+        });
     },
     handleCancel1() {
         this.setData({
             visible1: false
-        })
+        });
     },
     handleCancel2() {
         this.setData({
             visible2: false
-        })
+        });
     },
     handleClickItem1({detail}) {
         $Message({
             content: '点击了选项' + detail.index
         });
     },
-    handleClickItem2({detail}) {
+    handleClickItem2() {
         const action = [...this.data.actions2];
         action[0].loading = true;
         this.setData({
             actions2: action
-        })
+        });
         setTimeout(() => {
             action[0].loading = false;
             this.setData({
@@ -71,6 +71,6 @@ Page({
                 content: '删除成功！',
                 type: 'success'
             });
-        }, 2000)
+        }, 2000);
     }
-})
+});

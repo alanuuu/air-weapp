@@ -2,27 +2,27 @@ Page({
     data: {
         sync: {
             checked: false
-          },
-          async: {
+        },
+        async: {
             checked: true,
             loading: false
-          },
+        },
     },
     syncChange({ detail }) {
         this.setData({
-          'sync.checked': detail.checked
+            'sync.checked': detail.checked
         });
     },
-    
+
     asyncChange({ detail }) {
         this.setData({
-          'async.loading': true
+            'async.loading': true
         });
         setTimeout(() => {
-          this.setData({
-            'async.loading': false,
-            'async.checked': detail.checked
-          });
+            this.setData({
+                'async.loading': false,
+                'async.checked': detail.checked
+            });
         }, 500);
     }
-})
+});

@@ -1,40 +1,40 @@
 Page({
-   
-  data: {
-    showPopup: false,
-    showLeftPopup: false,
-    showRightPopup: false,
-    showTopPopup: false,
-    showBottomPopup: false
-  },
 
-  togglePopup() {
-    this.setData({
-      showPopup: !this.data.showPopup
-    });
-  },
+    data: {
+        showPopup: false,
+        showLeftPopup: false,
+        showRightPopup: false,
+        showTopPopup: false,
+        showBottomPopup: false
+    },
 
-  toggleLeftPopup() {
-    this.setData({
-      showLeftPopup: !this.data.showLeftPopup
-    });
-  },
+    togglePopup() {
+        this.setData({
+            showPopup: !this.data.showPopup
+        });
+    },
 
-  toggleRightPopup() {
-    this.setData({
-      showRightPopup: !this.data.showRightPopup
-    });
-  },
+    toggleLeftPopup() {
+        this.setData({
+            showLeftPopup: !this.data.showLeftPopup
+        });
+    },
 
-  toggleBottomPopup() {
-    this.setData({
-      showBottomPopup: !this.data.showBottomPopup
-    });
-  },
+    toggleRightPopup() {
+        this.setData({
+            showRightPopup: !this.data.showRightPopup
+        });
+    },
 
-  toggleTopPopup() {
-    this.setData({
-      showTopPopup: !this.data.showTopPopup
-    });
-  } 
-})
+    toggleBottomPopup() {
+        this.setData({
+            showBottomPopup: !this.data.showBottomPopup
+        });
+    },
+
+    toggleTopPopup() {
+        this.setData({
+            showTopPopup: !this.data.showTopPopup
+        });
+    }
+});
