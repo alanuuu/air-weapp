@@ -16,7 +16,7 @@
 
 ## 下载
 ```bash
- npm install air-weapp --production
+ npm install air-weapp -S --production
 ```
 
 ## 预览
