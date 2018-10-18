@@ -33,7 +33,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": -1,
+			"current": 10,
 			"list": [
 				{
 					"id": -1,
@@ -93,6 +93,12 @@
 					"id": -1,
 					"name": "badge",
 					"pathName": "pages/badge/index",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "search",
+					"pathName": "pages/search/index",
 					"query": ""
 				}
 			]

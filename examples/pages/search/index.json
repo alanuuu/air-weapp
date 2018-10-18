@@ -1,0 +1,7 @@
+{
+    "navigationBarTitleText": "Search 搜索框",
+    "usingComponents": {
+        "air-panel": "../../dist/panel/index",
+        "air-search": "../../dist/search/index"
+    }
+}

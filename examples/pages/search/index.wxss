@@ -1,0 +1,9 @@
+/* pages/search/index.wxss */
+.search {
+    height: 100vh;
+    background-color: #fff;
+}
+
+.search-wrap {
+    padding: 0 20rpx;
+}
