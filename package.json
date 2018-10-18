@@ -1,41 +1,46 @@
 {
-  "name": "air-weapp",
-  "version": "1.0.1",
-  "description": "微信小程序 UI 组件库",
-  "main": "app.js",
-  "directories": {
-    "example": "example"
-  },
-  "miniprogram": "dist",
-  "scripts": {
-    "dev": "cross-env NODE_ENV=development gulp serve --gulpfile build/build.js",
-    "build": "cross-env NODE_ENV=production gulp build --gulpfile build/build.js",
-    "precommit": "lint-staged"
-  },
-  "files": [
-    "dist"
-  ],
-  "lint-staged": {
-    "src/**/*.js": "eslint"
-  },
-  "bugs": {
-    "url": "https://github.com/AlanZou007/air-weapp/issues"
-  },
-  "repository": "git@github.com:AlanZou007/air-weapp.git",
-  "author": "azou",
-  "license": "MIT",
-  "devDependencies": {
-    "cross-env": "^5.2.0",
-    "eslint": "^3.19.0",
-    "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^5.0.0",
-    "gulp-base64": "^0.1.3",
-    "gulp-clean-css": "^3.9.3",
-    "gulp-less": "^4.0.0",
-    "gulp-rename": "^1.2.2",
-    "gulp-util": "^3.0.8",
-    "husky": "^1.1.2",
-    "less": "^2.7.3",
-    "lint-staged": "^7.2.0"
-  }
+    "name": "air-weapp",
+    "version": "1.0.1",
+    "description": "微信小程序 UI 组件库",
+    "main": "app.js",
+    "directories": {
+        "example": "example"
+    },
+    "miniprogram": "dist",
+    "scripts": {
+        "dev": "cross-env NODE_ENV=development gulp serve --gulpfile build/build.js",
+        "build": "cross-env NODE_ENV=production gulp build --gulpfile build/build.js",
+        "precommit": "lint-staged"
+    },
+    "files": [
+        "dist"
+    ],
+    "husky": {
+        "hooks": {
+            "pre-commit": "lint-staged"
+        }
+    },
+    "lint-staged": {
+        "*.js": "eslint"
+    },
+    "bugs": {
+        "url": "https://github.com/AlanZou007/air-weapp/issues"
+    },
+    "repository": "git@github.com:AlanZou007/air-weapp.git",
+    "author": "azou",
+    "license": "MIT",
+    "devDependencies": {
+        "cross-env": "^5.2.0",
+        "eslint": "^3.19.0",
+        "gulp": "^3.9.1",
+        "gulp-autoprefixer": "^5.0.0",
+        "gulp-base64": "^0.1.3",
+        "gulp-clean-css": "^3.9.3",
+        "gulp-less": "^4.0.0",
+        "gulp-rename": "^1.2.2",
+        "gulp-util": "^3.0.8",
+        "husky": "^1.1.2",
+        "less": "^2.7.3",
+        "lint-staged": "^7.2.0"
+    }
 }
