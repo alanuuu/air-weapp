@@ -1,9 +1,9 @@
-const config = require('./config');
 const gulp = require('gulp');
 const less = require('gulp-less');
 const cssmin = require('gulp-clean-css');
 const base64 = require('gulp-base64');
 const rename = require('gulp-rename');
+const config = require('../config');
 
 console.log('env: ', process.env.NODE_ENV);
 
@@ -35,6 +35,11 @@ gulp.task('compile-wxml', () => {
         .pipe(gulp.dest(config.distPath));
 });
 
+gulp.task('compile-wxs', () => {
+    return gulp.src(['../src/**/*.wxs'])
+        .pipe(gulp.dest(config.distPath));
+});
+
 if(!config.isProduction) {
     gulp.task('serve', () => {
         console.log('watch is running!');
@@ -45,8 +50,9 @@ if(!config.isProduction) {
     });
 }
 
-gulp.task('build', ['compile-less', 'compile-js', 'compile-json', 'compile-wxml']);
+gulp.task('build', ['compile-less', 'compile-js', 'compile-wxs','compile-json', 'compile-wxml']);
 
+//
 gulp.run('build');
 
 
