@@ -52,7 +52,6 @@ if(!config.isProduction) {
 
 gulp.task('build', ['compile-less', 'compile-js', 'compile-wxs','compile-json', 'compile-wxml']);
 
-//
 gulp.run('build');
 
 

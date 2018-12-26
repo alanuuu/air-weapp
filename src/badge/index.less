@@ -1,3 +1,5 @@
+@import '../common/styles/var.less';
+
 .air-badge {
     display: inline-block;
     vertical-align: middle;
@@ -10,9 +12,9 @@
         top: -10rpx;
         right: 0;
         border-radius: 30rpx;
-        font-size: 20rpx;
-        z-index: 10;
-        box-shadow: 0 0 0 1px #fff;
+        font-size: @font-mini-size;
+        z-index: @zindex-badge;
+        box-shadow: 0 0 0 1rpx #fff;
     }
     .dot {
         position: absolute;
