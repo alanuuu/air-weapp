@@ -5,7 +5,6 @@
     <air-cell-group>
         <air-cell title="Panel 面板" is-link url="/pages/panel/index"></air-cell>
         <air-cell title="List 列表" is-link url="/pages/list/index"></air-cell>
-        <air-cell title="Color 色调" is-link url="/pages/color/index"></air-cell>
     </air-cell-group>
 </air-panel>
 <air-panel title="基础组件">
