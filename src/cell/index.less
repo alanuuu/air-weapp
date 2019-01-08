@@ -1,5 +1,4 @@
-@import "../styles/_base.less";
-@import "../styles/_mixins.less";
+@import "../common/styles/index.less";
 
 .air-cell {
     position: relative;
@@ -8,15 +7,12 @@
     background: #fff;
     align-items: center;
     line-height: 1.5;
-    font-size: @size-font-base;
-    overflow: hidden;
+    font-size: @font-main-size;
 
     &::after {
-        .hairline();
-        border-bottom-width: 1px;
-        left: 15px;
-        right: 0;
+        .hairline-bottom(@left: 15px);
     }
+
     &-last::after{
         display: none;
     }
@@ -34,19 +30,17 @@
 
     &-text{
         line-height: 24px;
-        font-size: @size-font-base;
     }
 
     &-desc{
         line-height: 1.2;
-        font-size: @size-font-small;
-        color: @subsidiary-color;
+        font-size: @font-small-size;
+        color: @text-desc-color;
     }
 
     &-ft{
         position: relative;
         text-align: right;
-        color: @text-color;
     }
 
     &-access &-ft{
@@ -60,7 +54,7 @@
             top: 50%;
             right: 2px;
             border-width: 2px 2px 0 0;
-            border-color: @border-color-base;
+            border-color: @border-color;
             border-style: solid;
             transform: translateY(-50%) matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
         }

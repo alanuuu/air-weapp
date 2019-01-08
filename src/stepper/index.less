@@ -1,8 +1,7 @@
-@import "../styles/_base.less";
-@import "../styles/_mixins.less";
+@import "../common/styles/index.less";
 
 .air-stepper{
-    color: @text-color;
+    color: @text-main-color;
 
     view{
         display: inline-block;
@@ -12,21 +11,20 @@
         min-width: 40px;
         box-sizing: border-box;
         vertical-align: middle;
-        font-size: @size-font-small;
-        border: 1rpx solid @border-color-base;
+        font-size: @font-small-size;
+        border: 1rpx solid @border-color;
     }
 
     &-minus{
-        border-right: none !important;
         border-radius: 2px 0 0 2px;
+        border-right: none !important;
     }
     &-plus{
-        border-left: none !important;
         border-radius: 0 2px 2px 0;
+        border-left: none !important;
     }
 
     &-text{
-        border: 1rpx solid @border-color-base;
         display: inline-block;
         text-align: center;
         vertical-align: middle;
@@ -34,13 +32,13 @@
         width: 40px;
         /* 重置 input 默认样式 */
         min-height: auto;
-        font-size: @size-font-small;
+        font-size: @font-small-size;
         line-height: 30px;
+        border: 1rpx solid @border-color;
     }
 
     &-disabled{
-        border-color: @btn-disable-border;
-        color: @btn-disable-color;
-        background: @btn-disable-bg;
+        color: #bbbec4;
+        background: @disable-color;
     }
 }

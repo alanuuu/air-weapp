@@ -1,5 +1,8 @@
-@import "../styles/_base.less";
-@import "../styles/_mixins.less";
+@import "../common/styles/index.less";
+
+@btn-circle-size-large: 48px;
+@btn-circle-size: 44px;
+@btn-circle-size-small: 40px;
 
 .button-size(@padding; @font-size;) {
     padding: @padding;
@@ -17,7 +20,7 @@
 
 .btn-ghost() {
     .btn-color(#fff);
-    color: @text-color !important;
+    color: @text-main-color !important;
 }
 
 .air-btn {
@@ -28,7 +31,7 @@
     background-image: none;
     white-space: nowrap;
     user-select: none;
-    font-size: @size-font-base;
+    font-size: @font-main-size;
     border-radius: 2px;
     border: 0 !important;
     position: relative;
@@ -39,10 +42,9 @@
 
     box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.1);
 
-    .btn-color(@btn-default-bg);
-    color: @text-color !important;
+    .btn-primary;
 
-    margin: 10px;
+    margin: 10rpx;
 
     &-long{
         border-radius: 0;
@@ -58,10 +60,6 @@
     &-small {
         height: @btn-circle-size-small;
         line-height: @btn-circle-size-small;
-    }
-
-    &-primary{
-        .btn-primary;
     }
 
     &-ghost {
@@ -80,8 +78,8 @@
         .btn-color(@error-color);
     }
 
-    &-info {
-        .btn-color(@info-color);
+    &-disabled {
+        .btn-color(@disable-color);
     }
 
     &-circle{
@@ -110,11 +108,9 @@
         border-color: #fff #fff #fff transparent;
         animation: btn-spin 0.6s linear;
         animation-iteration-count: infinite;
-    }
-
-    &-disabled{
-        color: @btn-disable-color !important;
-        background: @btn-disable-bg !important;
+        &.ait-btn-ghost {
+            border-color: #ccc #ccc #ccc transparent;
+        }
     }
 }
 

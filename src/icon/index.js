@@ -14,5 +14,10 @@ Component({
             type: String,
             value: ''
         }
+    },
+    methods: {
+        handleClick() {
+            this.triggerEvent('click');
+        }
     }
 });

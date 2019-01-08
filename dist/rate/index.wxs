@@ -2,7 +2,7 @@ var perfixCls = 'air-rate';
 module.exports = {
     getCurrent: function (value, index) {
         if (index < value) {
-            return perfixCls + '-current'
+            return perfixCls + '-current';
         }
     }
-}
+};
