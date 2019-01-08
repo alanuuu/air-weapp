@@ -1,6 +1,7 @@
 Page({
     data: {
-        switch1 : true
+        switch1 : true,
+        show: true
     },
     onChange({detail}){
         this.setData({

@@ -20,7 +20,7 @@
     <air-cell title="只显示箭头" is-link></air-cell>
 </air-panel>
 
-<air-panel class="cell-panel-demo">
+<air-panel class="cell-panel-demo" title="带跳转的 cell">
     <air-cell title="跳转到首页" is-link url="/pages/index/index"></air-cell>
 </air-panel>
 
@@ -28,7 +28,6 @@
     <air-cell-group>
         <air-cell title="只显示箭头" is-link></air-cell>
         <air-cell title="跳转到首页" is-link url="/pages/index/index"></air-cell>
-        <air-cell title="只有 footer 点击有效" is-link url="/pages/index/index" only-tap-footer></air-cell>
         <block wx:if="{{ show }}">
             <air-cell title="单行列表" label="附加描述" value="详细信息"></air-cell>
             <air-cell title="表单">
@@ -41,6 +40,3 @@
     </air-cell-group>
 </air-panel>
 
-<air-panel class="cell-panel-demo">
-    <air-cell title="单行列表" label="附加描述" value="详细信息"></air-cell>
-</air-panel>

@@ -8,6 +8,7 @@ node_modules/
 *.swp
 *.swo
 *.proj
+
 examples/dist/
 examples/project.config.json
 test/unit/coverage
