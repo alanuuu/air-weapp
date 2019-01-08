@@ -5,6 +5,7 @@
     <view class="search-wrap">
         <air-search
             value="{{value}}"
+            bind:clean="onClean"
             bind:blur="onBlur"
             bind:focus="onFocus"
             bind:confirm="onConfirm"

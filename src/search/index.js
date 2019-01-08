@@ -3,7 +3,10 @@ Component({
     properties: {
         value: {
             type: String,
-            value: ''
+            value: '',
+            observer(newVal) {
+                this.onCloseShow(newVal);
+            },
         },
         placeholder: {
             type: String,
@@ -24,8 +27,17 @@ Component({
     },
     data: {
         focus: true,
+        showClose: false
     },
     methods: {
+        onCloseShow(val) {
+            this.setData({
+                showClose: val ? true : false
+            });
+        },
+        onClickClose() {
+            this.triggerEvent('clean');
+        },
         handleInput({detail}) {
             this.triggerEvent('change', {
                 value: detail.value

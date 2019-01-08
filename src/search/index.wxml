@@ -19,4 +19,13 @@
             bindinput="handleInput"
             bindblur="handleBlur">
         </input>
+        <block wx:if="{{showClose}}">
+            <air-icon
+                bind:click="onClickClose"
+                air-class="air-search-close-icon"
+                size="{{16}}"
+                type="{{'close'}}"
+                color="{{'#888'}}"/>
+        </block>
+
 </view>

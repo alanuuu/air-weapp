@@ -17,5 +17,10 @@ Page({
     },
     onConfirm({detail}) {
         console.log(detail.value);
+    },
+    onClean() {
+        this.setData({
+            value: ''
+        });
     }
 });
