@@ -2,7 +2,7 @@ Component({
     externalClasses: ['air-class'],
 
     properties: {
-        // default, primary, ghost, info, success, warning, error
+        // ghost, success, warning, error, disable
         type: {
             type: String,
             value: ''

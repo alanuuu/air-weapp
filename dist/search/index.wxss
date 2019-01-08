@@ -1,0 +1,1 @@
+.air-search{display:flex;position:relative}.air-search-icon{position:absolute;left:10px;top:50%;transform:translateY(-50%)}.air-search-input{padding-left:32px;flex:1;font-size:12px;border-radius:14px;height:.58rem;border-color:transparent;background-color:#f7f7f7;color:#aaa}.air-search-input::-webkit-input-placeholder{font-size:12px;color:#999}

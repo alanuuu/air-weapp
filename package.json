@@ -10,6 +10,7 @@
     "scripts": {
         "start": "cross-env NODE_ENV=development gulp serve --gulpfile build/build.js",
         "build": "cross-env NODE_ENV=production gulp build --gulpfile build/build.js",
+        "clean": "rm -rf dist examples/dist",
         "precommit": "lint-staged"
     },
     "files": [

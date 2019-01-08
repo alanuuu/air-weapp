@@ -3,8 +3,8 @@
     <view class="air-as-header air-class-header">
         <slot name="header"></slot>
     </view>
-    <view class="air-as-action-item" wx:for="{{actions}}" wx:key="{{item.name}}">
-        <air-button 
+    <view class="air-as-action-item {{index===actions.length-1? 'air-as-action-item-last': ''}}" wx:for="{{actions}}" wx:key="{{item.name}}">
+        <air-button
             bind:click="handleClickItem"
             data-index="{{index}}"
             open-type="{{item.openType}}"
