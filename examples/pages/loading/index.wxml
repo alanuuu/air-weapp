@@ -1,16 +1,24 @@
 <air-panel title="大" hideBorder>
-    <air-loading size="large" />
+    <view class="wrap">
+         <air-loading size="large" />
+    </view>
 </air-panel>
 
 <air-panel title="默认" hideBorder>
-    <air-loading  />
+<view class="wrap">
+ <air-loading  />
+</view>
 </air-panel>
 
 <air-panel title="小" hideBorder>
-    <air-loading  size="small" />
+   <view class="wrap">
+     <air-loading  size="small" />
+   </view>
 </air-panel>
 
 <air-panel title="自定义颜色" hideBorder>
+   <view class="wrap">
     <air-loading color="red"  />
+   </view>
 </air-panel>
 

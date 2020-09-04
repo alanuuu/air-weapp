@@ -8,3 +8,7 @@
     margin-top: 8rpx;
     text-align: center;
 }
+
+.wrap {
+    padding: 30rpx;
+}

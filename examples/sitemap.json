@@ -1,0 +1,7 @@
+{
+  "desc": "小程序 UI 组件库",
+  "rules": [{
+  "action": "allow",
+  "page": "*"
+  }]
+}
